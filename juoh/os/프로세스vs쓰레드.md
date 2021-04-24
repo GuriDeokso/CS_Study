@@ -21,7 +21,8 @@
     - ready: the process is waiting to be assigned to a processor.
     - terminated: the process has finished execution.
 
-    ![%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20vs%20%E1%84%8A%E1%85%B3%E1%84%85%E1%85%A6%E1%84%83%E1%85%B3%20e2aea9040ba64b48a2fa810e9599fad4/_2021-04-24__11.59.28.png](%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%20vs%20%E1%84%8A%E1%85%B3%E1%84%85%E1%85%A6%E1%84%83%E1%85%B3%20e2aea9040ba64b48a2fa810e9599fad4/_2021-04-24__11.59.28.png)
+_2021-04-24__11.59.28.png![Uploading image.png…]()
+
 
 ### **프로세스 제어 블록(Process Control Block, PCB) or TCB**
 

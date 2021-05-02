@@ -22,7 +22,7 @@ HTTP 메소드(HTTP Method)를 이용해 클라이언트가 서버에 데이터�
 - 실제로는 get, head 정도만 캐시 사용
 - post, patch의 경우 캐시 key 고려
 
-![http_method_01](./juoh/image/http_method-01.jpg)
+![http_method_01](../image/http_method-01.jpg)
 
 ### 메서드 종류
 

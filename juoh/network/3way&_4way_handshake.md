@@ -14,7 +14,7 @@
     2. 서버가 SYN(x)을 받고, 클라이언트로 받았다는 신호인 ACK와 SYN 패킷을 보냄 (sequence : y, ACK : x + 1)
     3. 클라이언트는 서버의 응답은 ACK(x+1)와 SYN(y) 패킷을 받고, ACK(y+1)를 서버로 보냄
 
-![3way&_4way_handshake-01](./juoh/image/3way&_4way_handshake-01.png)
+![3way&_4way_handshake-01](../image/3way&_4way_handshake-01.png)
 
 ### 4-way handshake란
 
@@ -29,7 +29,7 @@
 
      6.  TIME_WAIT 시간이 끝나면 클라이언트도 닫는다 (Closed)
 
-![3way&_4way_handshake-02](./juoh/image/3way&_4way_handshake-02.png)
+![3way&_4way_handshake-02](../image/3way&_4way_handshake-02.png)
 
 ### What is the SYN packet? ACK packet?
 

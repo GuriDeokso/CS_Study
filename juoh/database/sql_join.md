@@ -18,7 +18,7 @@
 
 ### 조인의 종류
 
-![sql_join_01](./juoh/image/sql_join_01.jpg)
+![sql_join_01](../image/sql_join_01.jpg)
 
 ### INNER JOIN
 

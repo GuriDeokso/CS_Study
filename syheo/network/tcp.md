@@ -45,7 +45,7 @@ SYN : **SYN**chronize sequence numbers
 
 ACK : **ACK**nowledgement
 
-![Untitled 1](https://user-images.githubusercontent.com/42290273/116803760-64fffd00-ab55-11eb-9bfe-837d9fec6727.png)
+![Untitled](https://user-images.githubusercontent.com/42290273/116803761-65989380-ab55-11eb-956e-86e715252c5b.png)
 
 # 3. TCP 4 way handshake
 
@@ -56,7 +56,8 @@ TCP 4 way handshake는 세션을 종료하기 위한 절차임.
 3. **Server > Client : FIN** : 오케이 통신 종료~
 4. **Client > Server : ACK** : 알겠다 확인~!
 
-![Untitled](https://user-images.githubusercontent.com/42290273/116803761-65989380-ab55-11eb-956e-86e715252c5b.png)
+![Untitled 1](https://user-images.githubusercontent.com/42290273/116803760-64fffd00-ab55-11eb-9bfe-837d9fec6727.png)
+
 
 ### Server에서 FIN을 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 FIN패킷보다 늦게 도착하는 상황이 발생한다면?
 

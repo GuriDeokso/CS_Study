@@ -26,8 +26,8 @@ HTTP 요청 데이터에 **특정 동작을 수행**하도록 하기 위한 방�
 ### HTTP Response
 
 서버가 HTTP Response를 하는 쪽이며, 데이터를 보내주는 원격지의 컴퓨터가 그 역할을 함.
+![Untitled 1](https://user-images.githubusercontent.com/42290273/116803758-64676680-ab55-11eb-94b9-d3d7222c596a.png)
 
-![Untitled 3](https://user-images.githubusercontent.com/42290273/116803752-616c7600-ab55-11eb-888b-86205cd887af.png)
 
 ### URL (Uniform Resource Locators)
 
@@ -95,8 +95,8 @@ URL을 이용하면 서버에 특정 데이터를 요청할 수 있음.
         ```
 
 ### HTTP 멱등성
+![Untitled 3](https://user-images.githubusercontent.com/42290273/116803752-616c7600-ab55-11eb-888b-86205cd887af.png)
 
-![Untitled 1](https://user-images.githubusercontent.com/42290273/116803758-64676680-ab55-11eb-94b9-d3d7222c596a.png)
 
 
 멱등(idempotent)의 의미:  같은 작업을 계속 반복해도 같은 결과가 나오는 경우를 의미

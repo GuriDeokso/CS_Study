@@ -12,7 +12,7 @@
 
 힙(Heap)은 각 노드의 키(Key)값이 그 자식의 키값보다 작지않거나(**최대 힙**), 그 자식의 키값보다 크지 않은(**최소 힙**) **완전 이진 트리**임.
 
-![%E1%84%92%E1%85%B5%E1%86%B8(Heap)%20e3cb92eb5d4e49faa7ca7fa3afa2da26/Untitled.png](%E1%84%92%E1%85%B5%E1%86%B8(Heap)%20e3cb92eb5d4e49faa7ca7fa3afa2da26/Untitled.png)
+![heap.png](./image/heap.png)
 
 ### 최대 힙(Max Heap)
 

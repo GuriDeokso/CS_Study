@@ -38,7 +38,6 @@ def extract_zip_file_with_renaming(dir_path, zip_file):
             with open(save_path, "wb") as f:
                 f.write(zip_obj.read(full_filename))
                 print('extract path:', save_path)
-    remove_zip_file(zip_file)
 
 
 def remove_zip_file(zip_file):
@@ -76,6 +75,8 @@ if __name__ == '__main__':
     for dir_path, zip_files in zip_files_by_dir_path.items():
         for zip_file in zip_files:
             extract_zip_file_with_renaming(dir_path=dir_path, zip_file=zip_file)
+            remove_zip_file(zip_file)
+
     for md_file, image_files in image_files_by_md_file.items():
         update_image_path(md_file, image_files)
     print('finish')

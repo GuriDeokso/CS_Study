@@ -67,8 +67,9 @@ def update_image_path(md_file, image_files):
 
 
 if __name__ == '__main__':
-    root_dir = './juoh/'
-    image_dir_path = os.path.join(root_dir, 'image')
+    root_dir = os.environ.get('CS_MY_DIR')
+    image_dir_path = os.path.join(root_dir, os.environ.get('CS_IMAGE_DIR'))
+
     zip_files_by_dir_path = defaultdict(list)
     image_files_by_md_file = defaultdict(list)
     search_zip_files(root_dir)

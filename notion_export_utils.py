@@ -4,13 +4,13 @@ import zipfile
 from collections import defaultdict
 
 
-def search_zip_files(dir_path):
+def search_zip_files(zip_files_by_dir_path, dir_path):
     try:
         files = os.listdir(dir_path)
         for file in files:
             full_filename = os.path.join(dir_path, file)
             if os.path.isdir(full_filename):
-                search_zip_files(full_filename)
+                search_zip_files(zip_files_by_dir_path, full_filename)
             else:
                 ext = os.path.splitext(full_filename)[-1]
                 if ext == '.zip':
@@ -20,7 +20,7 @@ def search_zip_files(dir_path):
         print(e)
 
 
-def extract_zip_file_with_renaming(dir_path, zip_file):
+def extract_zip_file_with_renaming(image_files_by_md_file, dir_path, zip_file):
     global image_dir_path
 
     with zipfile.ZipFile(zip_file, 'r') as zip_obj:

@@ -27,13 +27,13 @@ def extract_zip_file_with_renaming(dir_path, zip_file):
         image_idx = 1
         for full_filename in zip_obj.namelist():
             file_name, ext = os.path.splitext(full_filename)
-            keyword = file_name.split()[0]
+            valid_file_name = file_name.split()[0]
             if ext == '.md':
-                save_path = f"{os.path.join(dir_path, keyword)}{ext}"
+                save_path = f"{os.path.join(dir_path, valid_file_name)}{ext}"
                 image_files_by_md_file.setdefault(save_path, [])
             else:
-                save_path = f"{os.path.join(image_dir_path, keyword)}_{image_idx}{ext}"
-                image_files_by_md_file[f"{os.path.join(dir_path, keyword)}.md"].append(save_path)
+                save_path = f"{os.path.join(image_dir_path, valid_file_name)}_{image_idx}{ext}"
+                image_files_by_md_file[f"{os.path.join(dir_path, valid_file_name)}.md"].append(save_path)
                 image_idx += 1
             with open(save_path, "wb") as f:
                 f.write(zip_obj.read(full_filename))

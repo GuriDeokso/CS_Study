@@ -4,17 +4,17 @@ import zipfile
 from collections import defaultdict
 
 
-def search_zip_files(zip_files_by_dir_path, dir_path):
+def search_zip_files(zip_files_by_dir_path, search_dir_path):
     try:
-        files = os.listdir(dir_path)
+        files = os.listdir(search_dir_path)
         for file in files:
-            full_filename = os.path.join(dir_path, file)
+            full_filename = os.path.join(search_dir_path, file)
             if os.path.isdir(full_filename):
                 search_zip_files(zip_files_by_dir_path, full_filename)
             else:
                 ext = os.path.splitext(full_filename)[-1]
                 if ext == '.zip':
-                    zip_files_by_dir_path[dir_path].append(full_filename)
+                    zip_files_by_dir_path[search_dir_path].append(full_filename)
                     print('target file:', full_filename)
     except PermissionError as e:
         print(e)
@@ -68,15 +68,23 @@ def update_image_path(md_file, image_files):
 
 
 if __name__ == '__main__':
-    root_dir = os.environ.get('CS_MY_DIR')
-    image_dir_path = os.path.join(root_dir, os.environ.get('CS_IMAGE_DIR'))
+    print('start')
+    root_dir = os.getcwd()
+    search_dir_path = os.path.join(root_dir, os.environ.get('CS_DIR'))
+    image_dir_path = os.path.join(search_dir_path, os.environ.get('CS_IMAGE_DIR'))
     zip_files_by_dir_path = defaultdict(list)
     image_files_by_md_file = defaultdict(list)
+    print('search dir:', search_dir_path)
+    print('image dir:', image_dir_path)
 
-    search_zip_files(dir_path=root_dir)
+    search_zip_files(zip_files_by_dir_path, search_dir_path)
     for dir_path, zip_files in zip_files_by_dir_path.items():
         for zip_file in zip_files:
-            extract_zip_file_with_renaming(dir_path=dir_path, zip_file=zip_file)
+            extract_zip_file_with_renaming(
+                image_files_by_md_file,
+                dir_path,
+                zip_file
+            )
             remove_zip_file(zip_file)
     for md_file, image_files in image_files_by_md_file.items():
         update_image_path(md_file, image_files)

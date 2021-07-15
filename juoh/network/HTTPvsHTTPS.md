@@ -70,4 +70,4 @@
     7. 서버는 랜덤 대칭 암호화키로 클라이언트 요청에 대한 응답을 암호화하여 전송한다.
     8. 클라이언트는 랜덤 대칭 암호화키를 이용해 복호화하고 데이터를 이용한다.
 
-![HTTPvsHTTPS%204c02f2c7d403441396b2ad47ecf8f895/Untitled.png](HTTPvsHTTPS%204c02f2c7d403441396b2ad47ecf8f895/Untitled.png)
+![image_1](./HTTPvsHTTPS/1.png)

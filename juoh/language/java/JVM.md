@@ -14,12 +14,13 @@
     - 개발 관련 x. 실행 관련 o
     - java 는 보통 JRE 단위로 배포됨
 - **JDK (Java Development Kit)**
-    - JRE + 개발 툴(java c)
-        - javac.exe : 컴파일러
-        - java.exe : 인터프리터
-        - javap.exe : 역어셈블러
-        - javadoc.exe : 자동문서생성기 (소스 파일의 주석을 이용해 문서를 자동생성)
-        - jar.exe : 압축 프로그램
+    - JRE + 개발툴
+    - 개발 툴(java c)
+        - javac.exe : 컴파일러, 자바 소스코드를 바이트코드로 컴파일
+        - java.exe : 인터프리터, 컴파일러가 생성한 바이트코드를 해석하고 실행
+        - javap.exe : 역어셈블러, 컴파일된 클래스파일을 원래의 소스로 변환
+        - javadoc.exe : 자동문서생성기 (소스 파일의 주석을 이용해 API문서 같은 형식의 문서를 자동생성)
+        - jar.exe : 압축 프로그램, 클래스파일과 프로그램의 실행에 관련된  파일을 하나의 jar 파일로 압축하거나 압축해제한다.
     - 자바 11부터는 JDK 단위로 배포됨.
 - **Java**
     - 소스 코드(java 언어) 자체는 플랫폼에 독립적
@@ -27,7 +28,7 @@
     - JVM 자체 연관이 타이트하지 않음. (JVM 은 `.class` 만 다루므로...)
         - ex. Kotlin 과 kotlinc 로 `.class` 파일을 만들 수 있음.
 
-![image_0](../../image/JVM_1.png)
+![image_1](./JVM/1.png)
 
 ### jvm
 
@@ -48,7 +49,7 @@
 
     4. 가비지 컬렉터(garbage collector)
 
-![image_0](../../image/JVM_2.png)
+![image_2](./JVM/2.png)
 
 ### **`.java` 가 프로세스가 되기까지의 과정**
 
@@ -60,7 +61,7 @@
 
 이러한 실행과정 속에서 필요에 따라 쓰레드 동기화나 GC같은 관리작업을 수행한다.
 
-![image_0](../../image/JVM_3.png)
+![image_3](./JVM/3.png)
 
 ### **Byte 코드와 Binary 코드의 차이**
 

@@ -13,16 +13,16 @@
     - Young 영역(Yong Generation 영역): 새롭게 생성한 객체의 대부분이 여기에 위치한다. 대부분의 객체가 금방 접근 불가능 상태가 되기 때문에 매우 많은 객체가 Young 영역에 생성되었다가 사라진다. 이 영역에서 객체가 사라질때 Minor GC가 발생한다고 말한다.
     - Old 영역(Old Generation 영역): 접근 불가능 상태로 되지 않아 Young 영역에서 살아남은 객체가 여기로 복사된다. 대부분 Young 영역보다 크게 할당하며, 크기가 큰 만큼 Young 영역보다 GC는 적게 발생한다. 이 영역에서 객체가 사라질 때 Major GC(혹은 Full GC)가 발생한다고 말한다.
 
-![image_0](../../image/GC_1.png)
+![image_1](./GC/1.png)
 
-![image_0](../../image/GC_2.png)
+![image_2](./GC/2.png)
 
 - 예외적인 상황으로 Old 영역에 있는 객체가 Young 영역의 객체를 참조하는 경우도 존재할 것이다. 이러한 경우를 대비하여 Old 영역에는 512 bytes의 덩어리(Chunk)로 되어 있는 카드 테이블(Card Table)이 존재한다.
     - 카드 테이블에는 Old 영역에 있는 객체가 Young 영역의 객체를 참조할 때 마다 그에 대한 정보가 표시된다.
     - 카드 테이블이 도입된 이유는 간단한다. Young 영역에서 가비지 컬렉션(Minor GC)가 실행될 때 모든 Old 영역에 존재하는 객체를 검사하여 참조되지 않는 Young 영역의 객체를 식별하는 것이 비효율적이기 때문이다.
     - 그렇기 때문에 Young 영역에서 가비지 컬렉션이 진행될 때 카드 테이블만 조회하여 GC의 대상인지 식별할 수 있도록 하고 있다.
 
-![image_0](../../image/GC_3.png)
+![image_3](./GC/3.png)
 
 ## **Garbage Collection(가비지 컬렉션)의 동작 방식**
 
@@ -59,7 +59,7 @@
 - Survivor Space는 왜 2개일까?
     - Minor GC의 대상은 에덴뿐만 아니라 Survior 영역 포함이기 때문에 survior 영역의 메모리 단편화를 없애기 위해서
 
-![image_0](../../image/GC_4.png)
+![image_4](./GC/4.png)
 
 - HotSpot JVM에서는 Eden 영역에 객체를 빠르게 할당(Allocation)하기 위해 bump the pointer와 TLABs(Thread-Local Allocation Buffers)라는 기술을 사용하고 있다.
     - bump the pointer
@@ -94,7 +94,7 @@
 - 그렇기 때문에 Serial GC보다 빠른게 객체를 처리할 수 있다.
 - Parallel GC는 메모리가 충분하고 코어의 개수가 많을 때 유리하다. Parallel GC는 Throughput GC라고도 부른다.
 
-![image_0](../../image/GC_5.png)
+![image_5](./GC/5.png)
 
 ### Parallel Old GC(-XX:+UseParallelOldGC)
 
@@ -125,11 +125,11 @@
     - Compaction 단계가 기본적으로 제공되지 않는다.
 - 따라서, CMS GC를 사용할 때에는 신중히 검토한 후에 사용해야 한다. 그리고 조각난 메모리가 많아 Compaction 작업을 실행하면 다른 GC 방식의 stop-the-world 시간보다 stop-the-world 시간이 더 길기 때문에 Compaction 작업이 얼마나 자주, 오랫동안 수행되는지 확인해야 한다
 
-![image_0](../../image/GC_6.png)
+![image_6](./GC/6.png)
 
 ### [ G1(Garbage First GC]
 
-![image_0](../../image/GC_7.png)
+![image_7](./GC/7.png)
 
 - G1 GC는 Eden 영역에 할당하고, Survivor로 카피하는 등의 과정을 사용하지만 물리적으로 메모리 공간을 나누지 않는다.
 - 대신 Region(지역)이라는 개념을 새로 도입하여 Heap을 균등하게 여러 개의 지역으로 나누고, 각 지역을 역할과 함께 논리적으로 구분하여(Eden 지역인지, Survivor 지역인지, Old 지역인지) 객체를 할당한다.
@@ -154,4 +154,4 @@
         5. Cleanup: Stop-The-World 후, 살아있는 객체가 가장 적은 Region에 대해서 참조되지 않는 객체를 제거한다. Stop-The-World 끝내고 완전히 비워진 Region을 Freelist에 추가하여 재사용한다.
         6. Copy: Root Region Scan 단계에서 찾은 GC 대상 Region이었지만 Cleanup 단계에서 살아남은 객체들을 Available/Unused Region에 복사하여 Compaction 작업을 수행한다.
 
-![image_0](../../image/GC_8.png)
+![image_8](./GC/8.png)

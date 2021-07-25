@@ -6,21 +6,21 @@
 
 ### 논리적 에러를 이용한 공격
 
-![image_1](./SQL_Injection/1.png)
+![image_1](./sql-injection/sql-injection_1.png)
 
 Union based SQL Injection
 
-![image_2](./SQL_Injection/2.png)
+![image_2](./sql-injection/sql-injection_2.png)
 
 Blind SQL Injection
 
 - Boolean based
 
-![image_3](./SQL_Injection/3.png)
+![image_3](./sql-injection/sql-injection_3.png)
 
 - Time based SQL
 
-![image_4](./SQL_Injection/4.png)
+![image_4](./sql-injection/sql-injection_4.png)
 
 ### 대응방안
 

@@ -18,7 +18,7 @@
 
 ### 조인의 종류
 
-![image_1](./SQL-JOIN/1.jpg)
+![image_1](./sql-join/sql-join_1.jpg)
 
 ### INNER JOIN
 

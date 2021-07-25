@@ -28,7 +28,7 @@
     - JVM 자체 연관이 타이트하지 않음. (JVM 은 `.class` 만 다루므로...)
         - ex. Kotlin 과 kotlinc 로 `.class` 파일을 만들 수 있음.
 
-![image_1](./JVM/1.png)
+![image_1](./jvm/jvm_1.png)
 
 ### jvm
 
@@ -49,7 +49,7 @@
 
     4. 가비지 컬렉터(garbage collector)
 
-![image_2](./JVM/2.png)
+![image_2](./jvm/jvm_2.png)
 
 ### **`.java` 가 프로세스가 되기까지의 과정**
 
@@ -61,7 +61,7 @@
 
 이러한 실행과정 속에서 필요에 따라 쓰레드 동기화나 GC같은 관리작업을 수행한다.
 
-![image_3](./JVM/3.png)
+![image_3](./jvm/jvm_3.png)
 
 ### **Byte 코드와 Binary 코드의 차이**
 

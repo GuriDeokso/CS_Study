@@ -29,18 +29,18 @@
 - 위의 그림에서 <E>나 <K, V>라는 것은 컬렉션 프레임워크를 구성하는 모든 클래스가 제네릭으로 표현되어 있다.
     - [http://tcpschool.com/java/java_generic_concept](http://tcpschool.com/java/java_generic_concept)
 
-![image_1](./Collection/1.png)
+![image_1](./collection/collection_1.png)
 
 ### 주요 인터페이스의 간략한 특징
 
-![image_2](./Collection/2.png)
+![image_2](./collection/collection_2.png)
 
 - **Set 인터페이스**
     - 순서를 유지하지 않는 데이터의 집합으로 데이터의 중복을 허용하지 않는다.
     - **HashSet:** 가장빠른 임의 접근, 속도순서를 예측할 수 없음
     - **TreeSet:** 정렬방법을 지정할 수 있음
 
-![image_3](./Collection/3.png)
+![image_3](./collection/collection_3.png)
 
 - **List 인터페이스**
     - 순서가 있는 데이터의 집합으로 데이터의 중복을 허용한다.
@@ -48,7 +48,7 @@
     - **Vector:** 과거에 대용량 처리를 위해 사용했으며, 내부에서 자동으로 동기화처리가 일어나 비교적 성능이 좋지 않고 무거워 잘 쓰이지 않음
     - **ArrayList:** 단방향 포인터 구조로 각 데이터에 대한 인덱스를 가지고 있어 조회 기능에 성능이 뛰어남
 
-![image_4](./Collection/4.png)
+![image_4](./collection/collection_4.png)
 
 - **Map 인터페이스**
     - 키(Key), 값(Value)의 쌍으로 이루어진 데이터으 집합으로,
@@ -57,4 +57,4 @@
     - **HashMap:** 중복과 순서가 허용되지 않으며 null값이 올 수 있다.
     - **TreeMap:** 정렬된 순서대로 키(Key)와 값(Value)을 저장하여 검색이 빠름
 
-![image_5](./Collection/5.png)
+![image_5](./collection/collection_5.png)

@@ -9,7 +9,7 @@
 - 즉 트랜스포트 계층 프로토콜은 네트워크 라우터가 아닌 **종단 시스템**에서 구현된다
 - TCP, UDP
 
-![image_1](./트랜스_포트_개요/1.png)
+![image_1](./transport-layer/transport-layer_1.png)
 
 네트워크 계층 사이의 관계
 

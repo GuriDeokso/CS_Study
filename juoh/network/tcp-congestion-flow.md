@@ -45,7 +45,7 @@
     - 빠른 회복의 선형 증가 반복 & 선형 증가 끝나는 조건
         - 타임아웃: cwnd의 값을 1로 하고, ssthresh의 값은 cwnd/2로 설정, 이후 slow start
 
-![image_1](./TCP_혼잡제어/1.png)
+![image_1](./tcp-congestion-flow/tcp-congestion-flow_1.png)
 
 ### cf) 빠른 재전송(cs study용)
 

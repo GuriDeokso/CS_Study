@@ -24,7 +24,7 @@
     - Product 객체의 생성을 위해 팩티로 메서드를 호출
 - ConcreteCreator: 팩토리 메서드를 재정의하여 ConcreteProduct의 인스턴스를 반환
 
-![image_1](./팩토리_메서드/1.png)
+![image_1](./factory-method/factory-method_1.png)
 
 방법
 

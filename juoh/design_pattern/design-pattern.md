@@ -20,14 +20,14 @@
 
 ### 객체지향 solid 원칙
 
-![image_1](./디자인_패턴_개요/1.png)
+![image_1](./design-pattern/design-pattern_1.png)
 
 ### 디자인패턴 표현
 
 - UML
 - [https://blog.naver.com/PostView.nhn?blogId=1ilsang&logNo=221104669002&parentCategoryNo=&categoryNo=59&viewDate=&isShowPopularPosts=true&from=search](https://blog.naver.com/PostView.nhn?blogId=1ilsang&logNo=221104669002&parentCategoryNo=&categoryNo=59&viewDate=&isShowPopularPosts=true&from=search)
 
-![image_2](./디자인_패턴_개요/2.png)
+![image_2](./design-pattern/design-pattern_2.png)
 
 ### 디자인 패턴 종류
 

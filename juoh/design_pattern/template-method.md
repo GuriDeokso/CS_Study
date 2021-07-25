@@ -20,7 +20,7 @@
 
 ### 구조
 
-![image_1](./템플릿_메서드_패턴/1.png)
+![image_1](./template-method/template-method_1.png)
 
 - AbstractClass
     - 서브클래스들이 재정의를 통해 구현해야 하는 알고리즘 처리 단계 내의 기본 연산을 정의

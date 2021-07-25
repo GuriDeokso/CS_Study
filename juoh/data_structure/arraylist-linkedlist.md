@@ -48,9 +48,9 @@
 - 장점: 빠른 데이터 조회
 - 단점: 느린 삽입 삭제
 
-![image_1](./Array&ArrayList&LinkedList/1.png)
+![image_1](./arraylist-linkedlist/arraylist-linkedlist_1.png)
 
-![image_2](./Array&ArrayList&LinkedList/2.png)
+![image_2](./arraylist-linkedlist/arraylist-linkedlist_2.png)
 
 ### LinkedList
 
@@ -61,15 +61,15 @@
 - 자료의 순서를 유지한 채 삽입과 제거가 쉽다
 - 장점: 삽입 삭제가 용이
 
-![image_3](./Array&ArrayList&LinkedList/3.png)
+![image_3](./arraylist-linkedlist/arraylist-linkedlist_3.png)
 
-![image_4](./Array&ArrayList&LinkedList/4.png)
+![image_4](./arraylist-linkedlist/arraylist-linkedlist_4.png)
 
 - 단점: 탐색 시간이 많이 듬
 
 ### 시간복잡도
 
-![image_5](./Array&ArrayList&LinkedList/5.png)
+![image_5](./arraylist-linkedlist/arraylist-linkedlist_5.png)
 
 참고: python의 list는 dynamic array로 구현, high-level한 기능들이 존재
 

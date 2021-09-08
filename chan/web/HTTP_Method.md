@@ -84,9 +84,9 @@ DELETE example
 
 [간단정리]
 
-**`[GET](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/GET):**GET` 메서드는 특정 리소스의 표시를 요청합니다. `GET`을 사용하는 요청은 오직 데이터를 받기만 합니다.
+**`[GET](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/GET):**GET` 메서드는 특정 리소스의 표시를 요청합니다. `GET`을 사용하는 요청은 오직 데이터를 받기만 합니다.
 
-**`[HEAD](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/HEAD):**HEAD` 메서드는 `GET` 메서드의 요청과 동일한 응답을 요구하지만, 응답 본문을 포함하지 않습니다.
+**`[HEAD](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/HEAD):**HEAD` 메서드는 `GET` 메서드의 요청과 동일한 응답을 요구하지만, 응답 본문을 포함하지 않습니다.
 
 **`[POST](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/POST):**POST` 메서드는 특정 리소스에 엔티티를 제출할 때 쓰입니다. 이는 종종 서버의 상태의 변화나 부작용을 일으킵니다.
 

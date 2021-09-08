@@ -2,13 +2,13 @@
 
 ```jsx
 def bubble_sort(arr):
-	for i in range(len(arr)-1):       
-		for j in range(len(arr)-i-1): 
+	for i in range(len(arr)-1):
+		for j in range(len(arr)-i-1):
 			if arr[j] > arr[j+1]:
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 ```
 
-리스트의 처음부터 마지막 바로 전 원소까지 
+리스트의 처음부터 마지막 바로 전 원소까지
 
 바로 다음 원소와 크기를 비교하여 크기가 크다면 뒤로 보낸다.
 

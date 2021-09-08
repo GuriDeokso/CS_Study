@@ -18,17 +18,17 @@
 ### 종류
 
 - **단일 연결리스트**
-가장 기본적인 연결리스트의 구조이다.
+  가장 기본적인 연결리스트의 구조이다.
 
-![Untitled](Linked%20list%20350d7b5dee8a460599efa9ceea31e590/Untitled.png)
+![image1](./image/LL_1.png)
 
 - **이중 연결 리스트**
-포인터가 앞뒤 노드를 모두 가르킨다.
-역순으로 접근하기 용이하다.
+  포인터가 앞뒤 노드를 모두 가르킨다.
+  역순으로 접근하기 용이하다.
 
-![Untitled](Linked%20list%20350d7b5dee8a460599efa9ceea31e590/Untitled%201.png)
+![image2](./image/LL_2.png)
 
 - **원형 연결리스트**
-처음과 마지막 노드를 연결해서 순회할 수 있다. ****
+  처음과 마지막 노드를 연결해서 순회할 수 있다. \*\*\*\*
 
-![Untitled](Linked%20list%20350d7b5dee8a460599efa9ceea31e590/Untitled%202.png)
+![image3](./image/LL_3.png)

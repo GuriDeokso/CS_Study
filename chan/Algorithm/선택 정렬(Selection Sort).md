@@ -4,7 +4,8 @@
 2. 그 값을 맨 앞에 위치한 값과 교체한다.
 3. 맨 처음 위치를 뺀 나머지 리스트를 같은 방법으로 교체한다.
 
-![Selection-Sort-Animation.gif](%E1%84%89%E1%85%A5%E1%86%AB%E1%84%90%E1%85%A2%E1%86%A8%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%A7%E1%86%AF(Selection%20Sort)%200981152ba02041f68f5dadbd12cdff73/Selection-Sort-Animation.gif)
+![Selection-Sort-Animation.gif](<%E1%84%89%E1%85%A5%E1%86%AB%E1%84%90%E1%85%A2%E1%86%A8%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%A7%E1%86%AF(Selection%20Sort)%200981152ba02041f68f5dadbd12cdff73/Selection-Sort-Animation.gif>)
+![image.gif](./image/SS_1.gif)
 
 ```
 void selectionSort(int *list,const int n)

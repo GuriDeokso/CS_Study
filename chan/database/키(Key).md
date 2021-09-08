@@ -10,7 +10,7 @@
 
 - 키를 구성하는 속성 하나를 제거하면 유일하게 식별할 수 없도록 꼭 필요한 최소의 속성으로 구성되어야 함
 
-![Untitled](%E1%84%8F%E1%85%B5(Key)%2053b9ef0567d34f618ad4d28123312e74/Untitled.png)
+![image](./image/KEY_1.png)
 
 **1. 후보키 (Candidate Key)**
 
